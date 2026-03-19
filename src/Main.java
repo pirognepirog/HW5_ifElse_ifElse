@@ -19,55 +19,55 @@ public class Main {
         System.out.println("Здадча 2");
         int clientDeviceYear = 2015;
 
-            if (clientDeviceYear < 2015 && clientOS == 0) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }else if (clientDeviceYear < 2015 && clientOS == 1) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }else if (clientDeviceYear >= 2015 && clientOS == 0)   {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }else if (clientDeviceYear >= 2015 && clientOS == 1)   {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            }
+        if (clientDeviceYear < 2015 && clientOS == 0) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }else if (clientDeviceYear < 2015 && clientOS == 1) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }else if (clientDeviceYear >= 2015 && clientOS == 0)   {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }else if (clientDeviceYear >= 2015 && clientOS == 1)   {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
 
         //Здадча 3
         System.out.println("Здадча 3");
         // ну так то да, я тут ранее написал ерунду, знаки перепутал и не перепроверил
-         int year = 2024;
-         if (year <= 1584){
-             System.out.println("Год должен быть больше 1584");
-         } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-             System.out.println(year + " год является високосным");
-         } else {
-             System.out.println(year + " год не является високосным");
+        int year = 2024;
+        if (year <=1584){
+            System.out.println("Год должен быть больше 1584");
+        } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
         }
 
         //Здадча 4
         System.out.println("Здадча 4");
 
-         int deliveryDistance = 100;
-         int deliveryDays = 1;
-          if (deliveryDistance <= 20) {
-              System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " сутки");
-          } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+        int deliveryDistance = 100;
+        int deliveryDays = 1;
+        if (deliveryDistance <= 20) {
+            System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " сутки");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
             deliveryDays += 1;
-              System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " суток");
-          } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-              deliveryDays += 2;
-              System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " суток");
-          } else if (deliveryDistance > 100) {
-              deliveryDays++;
-              System.out.println("Дистанция свыше 100 км - доставка не производится, вам необходимо ее организовать самому!");
-          }
+            System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " суток");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryDays += 2;
+            System.out.println("Дистанция в пределах " + deliveryDistance + " км занимает " + deliveryDays + " суток");
+        } else if (deliveryDistance > 100) {
+            deliveryDays++;
+            System.out.println("Дистанция свыше 100 км - доставка не производится, вам необходимо ее организовать самому!");
+        }
 
         //Здадча 5
         System.out.println("Здадча 5");
 
-          byte monthNumber = 13;
+        byte monthNumber = 13;
 
         switch (monthNumber){
             case 1,2,3:
-              System.out.println("Зима");
-              break;
+                System.out.println("Зима");
+                break;
             case 4,5,6:
                 System.out.println("Весна");
                 break;
