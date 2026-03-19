@@ -31,10 +31,10 @@ public class Main {
 
         //Здадча 3
         System.out.println("Здадча 3");
-
-         int year = 2021;
-         if (year > 1584){
-             System.out.println(year + " год не является високосным");
+        // ну так то да, я тут ранее написал ерунду, знаки перепутал и не перепроверил
+         int year = 2024;
+         if (year <= 1584){
+             System.out.println("Год должен быть больше 1584");
          } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
              System.out.println(year + " год является високосным");
          } else {
